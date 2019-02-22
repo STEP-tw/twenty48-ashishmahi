@@ -16,7 +16,7 @@
 (def transpose
   (partial apply mapv vector))
 
-(def move-grid
+(def move-single-grid-right
   (comp
    (partial take-last 4)
    (partial concat (repeat 4 0))
@@ -28,7 +28,7 @@
 
 (def move-grid-right
   "Moves an entire grid to the right"
-  (partial map move-grid))
+  (partial map move-single-grid-right))
 
 (def move-grid-left
   "Moves an entire grid to the left"

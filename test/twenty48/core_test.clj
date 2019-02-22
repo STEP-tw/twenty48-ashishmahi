@@ -53,7 +53,7 @@
 (deftest moving-grid-right-single
   (testing "move single grid right"
     (is (= '(0 0 0 4)
-           (move-grid
+           (move-single-grid-right
             '(0 0 2 2))))))
 
 
